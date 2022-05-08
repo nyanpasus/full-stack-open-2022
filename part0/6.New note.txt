@@ -1,0 +1,11 @@
+title 6.New note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa {"content":"Hello World","date":"2022-05-08T13:17:15.838Z"}
+
+note over browser: 
+browser starts executing js-code
+that append json data to note list of the page
+end note
+
+note over server: execute json data that append it to note list
+server-->browser: response result content {"message":"note created"}

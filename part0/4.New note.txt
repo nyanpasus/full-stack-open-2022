@@ -1,0 +1,7 @@
+title 4.New note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note note=Hello+World
+note over server: execute form data that append it to note list
+server-->browser: redirect to https://studies.cs.helsinki.fi/exampleapp/notes
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+note over browser: same workflow as "Loading a page containing JavaScript"
